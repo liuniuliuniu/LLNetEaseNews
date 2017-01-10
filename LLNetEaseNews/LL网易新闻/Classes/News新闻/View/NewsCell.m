@@ -26,8 +26,6 @@
 
 @end
 
-
-
 @implementation NewsCell
 
 - (void)awakeFromNib {

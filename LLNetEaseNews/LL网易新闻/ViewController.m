@@ -12,8 +12,6 @@
 #import "ChannelModel.h"
 #import "HomeCell.h"
 
-
-
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 //频道分类 视图

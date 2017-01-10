@@ -34,7 +34,6 @@
 //    
 }
 
-
 #pragma mark - 将URLstring传给新闻控制器
 - (void)setURLString:(NSString *)URLString
 {
