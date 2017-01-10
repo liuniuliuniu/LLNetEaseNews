@@ -10,15 +10,10 @@
 
 @interface ChannelModel : NSObject
 
-//用于区别频道标签的对应的新闻内容  将来用来拼接url
 @property (nonatomic, copy)NSString *tid;
-
 
 @property (nonatomic, copy)NSString *tname;
 
-
-
-//通过此方法 获取频道标签的数组
 + (NSArray *)channels;
 
 

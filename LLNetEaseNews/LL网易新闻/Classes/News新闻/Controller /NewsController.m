@@ -20,20 +20,13 @@
 @implementation NewsController{
 
     NSArray<NewsModel *> *_newsList;
-
 }
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
-
-
 - (void)setURLString:(NSString *)URLString
 {
     _URLString = URLString;
-//    NSLog(@"%@",URLString);
-//一定要在此发送请求  在这里才知道什么时候有地址
     [self loadNewsData];
 }
 
@@ -49,9 +42,6 @@
         NSArray *arrDict = response[key];
         
         _newsList = [NSArray yy_modelArrayWithClass:[NewsModel class] json:arrDict];
-        
-//        NSLog(@"%@--------%@",_newsList,[NSThread currentThread]);
-//
 //        刷新界面  否则有些界面显示不出来
         [self.tableView reloadData];
         

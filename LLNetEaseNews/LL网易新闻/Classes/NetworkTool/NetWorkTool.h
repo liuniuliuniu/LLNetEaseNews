@@ -10,10 +10,7 @@
 
 @interface NetWorkTool : AFHTTPSessionManager
 
-
-//全区的访问点
 + (instancetype)sharedNetWorkTool;
-
 
 - (void)GetWithUrlString:(NSString *)UrlStr success:(void(^)(id response))success faile:(void(^)(NSError *error))faile;
 
