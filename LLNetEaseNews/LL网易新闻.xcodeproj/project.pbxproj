@@ -15,8 +15,6 @@
 		8CCA07391D9F59AD00204A7C /* NewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCA07381D9F59AD00204A7C /* NewsCell.m */; };
 		8CCFD2581D9E558D00FBC1EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCFD2571D9E558D00FBC1EF /* main.m */; };
 		8CCFD25B1D9E558D00FBC1EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCFD25A1D9E558D00FBC1EF /* AppDelegate.m */; };
-		8CCFD25E1D9E558D00FBC1EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCFD25D1D9E558D00FBC1EF /* ViewController.m */; };
-		8CCFD2611D9E558D00FBC1EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCFD25F1D9E558D00FBC1EF /* Main.storyboard */; };
 		8CCFD2631D9E558D00FBC1EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CCFD2621D9E558D00FBC1EF /* Assets.xcassets */; };
 		8CCFD2661D9E558D00FBC1EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCFD2641D9E558D00FBC1EF /* LaunchScreen.storyboard */; };
 		8CCFD2711D9E558D00FBC1EF /* LL____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCFD2701D9E558D00FBC1EF /* LL____Tests.m */; };
@@ -29,6 +27,9 @@
 		8CCFD2EA1D9EBE2500FBC1EF /* NewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCFD2E81D9EBE2500FBC1EF /* NewsController.m */; };
 		8CCFD2ED1D9EBE7E00FBC1EF /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CCFD2EC1D9EBE7E00FBC1EF /* News.storyboard */; };
 		8CCFD2F01D9EBEDB00FBC1EF /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CCFD2EF1D9EBEDB00FBC1EF /* HomeCell.m */; };
+		D2396D7A1E2D3A0900963200 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2396D791E2D3A0900963200 /* ViewController.m */; };
+		D2396D7D1E2D3A0900963200 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2396D7B1E2D3A0900963200 /* Main.storyboard */; };
+		D262C69A1E49E0A300AE6750 /* UItableviewTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D262C6991E49E0A300AE6750 /* UItableviewTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,9 +65,6 @@
 		8CCFD2571D9E558D00FBC1EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8CCFD2591D9E558D00FBC1EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		8CCFD25A1D9E558D00FBC1EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		8CCFD25C1D9E558D00FBC1EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../../ViewController.h; sourceTree = "<group>"; };
-		8CCFD25D1D9E558D00FBC1EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../../ViewController.m; sourceTree = "<group>"; };
-		8CCFD2601D9E558D00FBC1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CCFD2621D9E558D00FBC1EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CCFD2651D9E558D00FBC1EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CCFD2671D9E558D00FBC1EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -92,6 +90,11 @@
 		8CCFD2EE1D9EBEDB00FBC1EF /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
 		8CCFD2EF1D9EBEDB00FBC1EF /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
 		CB64EFD439DB89452424707E /* Pods-LL网易新闻.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LL网易新闻.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LL网易新闻/Pods-LL网易新闻.debug.xcconfig"; sourceTree = "<group>"; };
+		D2396D781E2D3A0900963200 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = "LL网易新闻/ViewController.h"; sourceTree = SOURCE_ROOT; };
+		D2396D791E2D3A0900963200 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = "LL网易新闻/ViewController.m"; sourceTree = SOURCE_ROOT; };
+		D2396D7C1E2D3A0900963200 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "LL网易新闻/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		D262C6981E49E0A300AE6750 /* UItableviewTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UItableviewTableViewController.h; sourceTree = "<group>"; };
+		D262C6991E49E0A300AE6750 /* UItableviewTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UItableviewTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +205,8 @@
 				8CCFD2CB1D9E993C00FBC1EF /* Home（主页） */,
 				8CCFD2C71D9E993C00FBC1EF /* Channel频道 */,
 				8CCFD2D01D9E993C00FBC1EF /* News新闻 */,
+				D262C6981E49E0A300AE6750 /* UItableviewTableViewController.h */,
+				D262C6991E49E0A300AE6750 /* UItableviewTableViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -254,9 +259,9 @@
 		8CCFD2CC1D9E993C00FBC1EF /* Controller  */ = {
 			isa = PBXGroup;
 			children = (
-				8CCFD25C1D9E558D00FBC1EF /* ViewController.h */,
-				8CCFD25D1D9E558D00FBC1EF /* ViewController.m */,
-				8CCFD25F1D9E558D00FBC1EF /* Main.storyboard */,
+				D2396D7B1E2D3A0900963200 /* Main.storyboard */,
+				D2396D781E2D3A0900963200 /* ViewController.h */,
+				D2396D791E2D3A0900963200 /* ViewController.m */,
 			);
 			path = "Controller ";
 			sourceTree = "<group>";
@@ -423,7 +428,7 @@
 				TargetAttributes = {
 					8CCFD2521D9E558D00FBC1EF = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = VU844ULJ93;
+						DevelopmentTeam = 5KVUAK8MDB;
 					};
 					8CCFD26B1D9E558D00FBC1EF = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -465,9 +470,9 @@
 				8CCA07351D9F49B400204A7C /* .Ulysses-Group.plist in Resources */,
 				8CCFD2661D9E558D00FBC1EF /* LaunchScreen.storyboard in Resources */,
 				8CCFD2631D9E558D00FBC1EF /* Assets.xcassets in Resources */,
+				D2396D7D1E2D3A0900963200 /* Main.storyboard in Resources */,
 				8CCFD2ED1D9EBE7E00FBC1EF /* News.storyboard in Resources */,
 				8CCFD2D51D9E999400FBC1EF /* topic_news.json in Resources */,
-				8CCFD2611D9E558D00FBC1EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,13 +545,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CCFD25E1D9E558D00FBC1EF /* ViewController.m in Sources */,
+				D2396D7A1E2D3A0900963200 /* ViewController.m in Sources */,
 				8CCFD2E61D9EA82F00FBC1EF /* ChannelLable.m in Sources */,
 				8CCFD2E21D9EA15E00FBC1EF /* NSObject+YYModel.m in Sources */,
 				8CCFD2F01D9EBEDB00FBC1EF /* HomeCell.m in Sources */,
 				8CCA072D1D9F395B00204A7C /* NetWorkTool.m in Sources */,
 				8CCFD25B1D9E558D00FBC1EF /* AppDelegate.m in Sources */,
 				8CCA07301D9F496A00204A7C /* NewsModel.m in Sources */,
+				D262C69A1E49E0A300AE6750 /* UItableviewTableViewController.m in Sources */,
 				8CCFD2EA1D9EBE2500FBC1EF /* NewsController.m in Sources */,
 				8CCFD2581D9E558D00FBC1EF /* main.m in Sources */,
 				8CCA07361D9F49B400204A7C /* NSArray+Log.m in Sources */,
@@ -588,21 +594,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8CCFD25F1D9E558D00FBC1EF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8CCFD2601D9E558D00FBC1EF /* Base */,
-			);
-			name = Main.storyboard;
-			path = ../../..;
-			sourceTree = "<group>";
-		};
 		8CCFD2641D9E558D00FBC1EF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8CCFD2651D9E558D00FBC1EF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2396D7B1E2D3A0900963200 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2396D7C1E2D3A0900963200 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -695,6 +700,7 @@
 			baseConfigurationReference = CB64EFD439DB89452424707E /* Pods-LL网易新闻.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KVUAK8MDB;
 				INFOPLIST_FILE = "LL网易新闻/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -708,6 +714,7 @@
 			baseConfigurationReference = 0B5C3AE79F92EA2C4EC9007A /* Pods-LL网易新闻.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5KVUAK8MDB;
 				INFOPLIST_FILE = "LL网易新闻/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

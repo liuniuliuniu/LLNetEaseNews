@@ -23,7 +23,6 @@
     NSArray *tListArr = jsonDict[@"tList"];
     
     NSMutableArray *channelArrM = [NSMutableArray arrayWithCapacity:tListArr.count];
-    
 
     [tListArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
        
@@ -42,6 +41,8 @@
     return channelArrM.copy;
 
 }
+
+
 
 - (NSString *)description
 {

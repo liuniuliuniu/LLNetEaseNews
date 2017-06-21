@@ -30,6 +30,8 @@
     [self loadNewsData];
 }
 
+
+
 - (void)loadNewsData
 {
 
@@ -67,6 +69,8 @@
     if (model.imgType) {
         
         Identifier = @"BigCell";
+        
+        
     }else if (model.imgextra.count == 2){
     
         Identifier = @"ImagesCell";
@@ -79,6 +83,7 @@
     NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:Identifier forIndexPath:indexPath];
     
     cell.news = model;
+    
     return cell;
 
 }

@@ -36,7 +36,6 @@
      scale = MinScale + (MaxScale - MinScale)* scale;
     
     self.transform = CGAffineTransformMakeScale(scale, scale);
-    
 
 }
 

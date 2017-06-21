@@ -78,6 +78,8 @@
 //一定要设置滚动范围
     self.channelScrollView.contentSize = CGSizeMake(lableW * _channelArr.count, 0);
 }
+
+
 #pragma mark - 点击的联动方法事件
 - (void)tapAction:(UITapGestureRecognizer *)sender
 {
@@ -119,6 +121,8 @@
         }
     }
 }
+
+
 #pragma mark - 滚动collectionView的代理方法
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
@@ -184,6 +188,8 @@
 {
     return _channelArr.count;
 }
+
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     HomeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HomeCollectionViewCell" forIndexPath:indexPath];
