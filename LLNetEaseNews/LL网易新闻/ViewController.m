@@ -14,13 +14,13 @@
 
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
-//频道分类 视图
+
 @property (weak, nonatomic) IBOutlet UIScrollView *channelScrollView;
-//新闻视图
+
 @property (weak, nonatomic) IBOutlet UICollectionView *HomeCollectionView;
 
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *HomeCollectionFlowlayout;
-//标签模型数组
+
 @property (nonatomic, strong)NSArray *channelArr;
 
 @property (nonatomic, strong)NSMutableArray *channelLables;
@@ -32,14 +32,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-// iOS7.0的新特性 : 当UIScrollView及其子类(UITableView,UICollectionView...),自动布局时,是以nav为参考点时,滚动视图的"内容"会自动的向下偏移64个像素
-//   不让滚动视图向下偏移64 个像素
     self.automaticallyAdjustsScrollViewInsets = NO;
 
     [self creatChannelLable];
    
 }
-#pragma mark - 在此方法中设置collectionviewcell 的宽度
+
 - (void)viewDidAppear:(BOOL)animated
 {
 //    只有在此方法中拿到的HomeCollectionView 和宽度 是真实的
@@ -47,24 +45,23 @@
     self.HomeCollectionFlowlayout.itemSize = self.HomeCollectionView.bounds.size;
 }
 
-#pragma mark - 创建标签频道
+
 - (void)creatChannelLable
 {
-//    拿到标签模型数组
+
     _channelArr = [ChannelModel channels];
-//    实例化标签数组
+
     _channelLables = [NSMutableArray arrayWithCapacity:_channelArr.count];
     float lableW = 80;
     float lableH = self.channelScrollView.bounds.size.height;
     for (NSInteger i = 0; i <  _channelArr.count; i++) {
         ChannelLable *lable = [[ChannelLable alloc]init];
-//    设置lable的位置
+
         lable.frame = CGRectMake(lableW * i, 0, lableW, lableH);
         [self.channelScrollView addSubview:lable];
-//        为lable赋值
+
         ChannelModel *model = _channelArr[i];
         lable.text = model.tname;
-#pragma mark - 为每一个lable添加点击事件
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
         [lable addGestureRecognizer:tap];
         lable.userInteractionEnabled = YES;
@@ -75,12 +72,12 @@
             lable.scale = 1.0;
         }
     }
-//一定要设置滚动范围
+
     self.channelScrollView.contentSize = CGSizeMake(lableW * _channelArr.count, 0);
 }
 
 
-#pragma mark - 点击的联动方法事件
+
 - (void)tapAction:(UITapGestureRecognizer *)sender
 {
 
@@ -108,9 +105,9 @@
     
     NSInteger index = selectLable.tag;
     
-//    把选中的标签设置成最大比  没选中的还原
+
     for (NSInteger i = 0; i < _channelLables.count; i++) {
-//        每次都需要遍历所有的lable
+
         ChannelLable *lable = _channelLables[i];
         
         if (index == i) {
@@ -123,7 +120,6 @@
 }
 
 
-#pragma mark - 滚动collectionView的代理方法
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
     NSInteger index =scrollView.contentOffset.x/self.view.bounds.size.width;
@@ -154,7 +150,7 @@
         }
     }
 }
-#pragma mark - 时刻在滚动
+
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
 
@@ -164,7 +160,7 @@
 
     CGFloat percent = offsetX - index_current;
     
-    NSLog(@"%f---%zd ---%f",offsetX,index_current,percent);
+    
     NSInteger index_left = index_current;
 
     NSInteger index_right = index_current + 1;
@@ -194,12 +190,12 @@
 {
     HomeCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"HomeCollectionViewCell" forIndexPath:indexPath];
     
-//    取出对应的模型
+
     ChannelModel *model = _channelArr[indexPath.item];
     
-//    拼接路径
+
     NSString *URLString = [NSString stringWithFormat:@"article/list/%@/0-20.html",model.tid];
-    // 把地址传递给谁
+
     cell.URLString = URLString;
     
     return cell;

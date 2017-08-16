@@ -10,22 +10,22 @@
 
 @interface NewsModel : NSObject
 
-//图片
+
 @property (nonatomic, copy)NSString *imgsrc;
 
-//回复量
+
 @property (nonatomic, assign)NSNumber *replyCount;
 
-//来源
+
 @property (nonatomic, copy)NSString *source;
 
-//标题
+
 @property (nonatomic, copy)NSString *title;
 
-//判断是否是大图
+
 @property (nonatomic, assign)BOOL imgType;
 
-//判断是否是多图
+
 @property (strong, nonatomic) NSArray *imgextra;
 
 

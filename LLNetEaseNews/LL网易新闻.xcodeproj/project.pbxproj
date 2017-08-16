@@ -202,22 +202,23 @@
 				8CCFD2591D9E558D00FBC1EF /* AppDelegate.h */,
 				8CCFD25A1D9E558D00FBC1EF /* AppDelegate.m */,
 				8CCFD2CF1D9E993C00FBC1EF /* NetworkTool */,
-				8CCFD2CB1D9E993C00FBC1EF /* Home（主页） */,
-				8CCFD2C71D9E993C00FBC1EF /* Channel频道 */,
-				8CCFD2D01D9E993C00FBC1EF /* News新闻 */,
+				8CCFD2CB1D9E993C00FBC1EF /* Home */,
+				8CCFD2C71D9E993C00FBC1EF /* Channel */,
+				8CCFD2D01D9E993C00FBC1EF /* News */,
 				D262C6981E49E0A300AE6750 /* UItableviewTableViewController.h */,
 				D262C6991E49E0A300AE6750 /* UItableviewTableViewController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		8CCFD2C71D9E993C00FBC1EF /* Channel频道 */ = {
+		8CCFD2C71D9E993C00FBC1EF /* Channel */ = {
 			isa = PBXGroup;
 			children = (
 				8CCFD2C81D9E993C00FBC1EF /* Controller  */,
 				8CCFD2C91D9E993C00FBC1EF /* Model */,
 				8CCFD2CA1D9E993C00FBC1EF /* View */,
 			);
+			name = Channel;
 			path = "Channel频道";
 			sourceTree = "<group>";
 		};
@@ -246,13 +247,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		8CCFD2CB1D9E993C00FBC1EF /* Home（主页） */ = {
+		8CCFD2CB1D9E993C00FBC1EF /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				8CCFD2CC1D9E993C00FBC1EF /* Controller  */,
 				8CCFD2CD1D9E993C00FBC1EF /* Model */,
 				8CCFD2CE1D9E993C00FBC1EF /* View */,
 			);
+			name = Home;
 			path = "Home（主页）";
 			sourceTree = "<group>";
 		};
@@ -291,13 +293,14 @@
 			path = NetworkTool;
 			sourceTree = "<group>";
 		};
-		8CCFD2D01D9E993C00FBC1EF /* News新闻 */ = {
+		8CCFD2D01D9E993C00FBC1EF /* News */ = {
 			isa = PBXGroup;
 			children = (
 				8CCFD2D11D9E993C00FBC1EF /* Controller  */,
 				8CCFD2D21D9E993C00FBC1EF /* Model */,
 				8CCFD2D31D9E993C00FBC1EF /* View */,
 			);
+			name = News;
 			path = "News新闻";
 			sourceTree = "<group>";
 		};

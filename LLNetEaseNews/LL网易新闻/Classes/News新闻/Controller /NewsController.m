@@ -44,7 +44,7 @@
         NSArray *arrDict = response[key];
         
         _newsList = [NSArray yy_modelArrayWithClass:[NewsModel class] json:arrDict];
-//        刷新界面  否则有些界面显示不出来
+
         [self.tableView reloadData];
         
     } faile:^(NSError *error) {

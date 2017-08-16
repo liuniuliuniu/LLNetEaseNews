@@ -11,13 +11,14 @@
 
 @implementation HomeCell{
 
-//    成员变量
+
     NewsController *_newVC;
     
 }
 
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
 
     UIStoryboard *news = [UIStoryboard storyboardWithName:@"News" bundle:nil];
     _newVC = [news instantiateInitialViewController];
@@ -27,7 +28,7 @@
     [self.contentView addSubview:_newVC.tableView];
 }
 
-#pragma mark - 将URLstring传给新闻控制器
+
 - (void)setURLString:(NSString *)URLString
 {
     _URLString = URLString;
